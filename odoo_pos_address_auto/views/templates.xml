@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <template id="assets" inherit_id="point_of_sale.assets">
+          <xpath expr="." position="inside">
+              <script type="text/javascript" src="/cdl_pos_address_auto/static/src/js/address_auto.js"></script>
+              <link rel="stylesheet" href="/cdl_pos_address_auto/static/src/css/address_auto.css" />
+          </xpath>
+        </template>
+
+    </data>
+</openerp>
