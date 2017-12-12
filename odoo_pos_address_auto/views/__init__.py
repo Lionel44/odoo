@@ -2,7 +2,7 @@
 ##############################################################################
 #
 #    OpenERP, Open Source Management Solution
-#    Copyright (C) 2014 Auguria (<http://www.auguria.net>).
+#    Copyright (C) 2017 Lionel BLANCHET.
 #    All Rights Reserved
 #
 #    This program is free software: you can redistribute it and/or modify
