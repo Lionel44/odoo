@@ -27,7 +27,7 @@
     "summary": "French Address autocompletion",
     "sequence": 0,
     "certificate": "",
-    "license": "OEEL-1",
+    "license": "Other proprietary",
     "price": 40,
     "currency": "EUR",
     "depends": [
