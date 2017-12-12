@@ -29,7 +29,7 @@
     "certificate": "",
     "license": "OEEL-1",
     "price": 40,
-    "currency": 'EUR',
+    "currency": "EUR",
     "depends": [
             "web",
             "base",
