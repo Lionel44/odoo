@@ -35,7 +35,7 @@
             "base",
             "point_of_sale",
     ],
-    "category": "Point of sale,
+    "category": "Point of sale",
     "complexity": "easy",
     "description": """
 (English) Pos Partner French address autocompletion
