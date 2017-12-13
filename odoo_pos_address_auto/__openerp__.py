@@ -64,7 +64,7 @@ Par exemple en tapant seulement "Moza 44130" dans le champ Rue, l'autocompletion
 	     "views/templates.xml"
     ],
     "auto_install": False,
-    "installable": True,
+    "installable": False,
     "application": False,
 }
 # vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:
