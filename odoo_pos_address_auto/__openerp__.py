@@ -58,7 +58,7 @@ Par exemple en tapant seulement "Moza 44130" dans le champ Rue, l'autocompletion
     ],
     "demo": [
     ],
-    "images": ["static/description/address_auto1.jpg"
+    "images": ["static/description/Address_auto1.jpg"
     ],
     "data": [
 	     "views/templates.xml"
