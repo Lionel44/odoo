@@ -21,7 +21,7 @@
 ##############################################################################
 {
     "name": "Pos Partner French address autocompletion",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "author": "Lionel BLANCHET",
     "website": "",
     "summary": "French Address autocompletion",
