@@ -33,7 +33,7 @@
     "depends": [
             "web",
             "base",
-            "point_of_sale",
+            "Point Of Sale",
     ],
     "category": "Point of sale",
     "complexity": "easy",
