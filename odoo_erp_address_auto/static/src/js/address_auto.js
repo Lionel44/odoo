@@ -1,13 +1,5 @@
-odoo.define('odoo_address_auto', function (require) {
-"use strict";
-
-var screens = require('point_of_sale.screens');
-
-screens.ClientListScreenWidget.include({
-    display_client_details: function(visibility,partner,clickpos){
-        var self = this;
-        this._super(visibility,partner,clickpos);
-
+odoo.define('odoo_address_auto', function (instance) {
+instance.base.view_partner_form = instance.base.view_partner_form.extend({
 // autocompletion de l'adresse
         this.$('.o_address_street').autocomplete({
 	source: function (request, response) {
