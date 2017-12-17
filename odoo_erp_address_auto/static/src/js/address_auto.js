@@ -1,12 +1,5 @@
-odoo.define('odoo_address_auto', function (require) {
+odoo.define('odoo_erp_address_auto', function (require) {
 "use strict";
-
-var screens = require('point_of_sale.screens');
-
-screens.ClientListScreenWidget.include({
-    display_client_details: function(visibility,partner,clickpos){
-        var self = this;
-        this._super(visibility,partner,clickpos);
 
 // autocompletion de l'adresse
         this.$('.o_address_street').autocomplete({
