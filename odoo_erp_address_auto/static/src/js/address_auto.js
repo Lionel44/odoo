@@ -80,8 +80,4 @@ odoo.define('odoo_erp_address_auto', function (require) {
         		$('.o_address_zip').val(ui.item.postcode);
         	}
     });
-    },
-
-});
-
 });
