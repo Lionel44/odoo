@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <openerp>
     <data>
-        <template id="assets_backend" inherit_id="web.assets_backend">
+        <template id="assets_backend" name="odoo_erp_address_auto" inherit_id="web.assets_backend">
           <xpath expr="." position="inside">
               <script type="text/javascript" src="/odoo_erp_address_auto/static/src/js/address_auto.js"></script>
               <link rel="stylesheet" href="/odoo_erp_address_auto/static/src/css/address_auto.css" />
