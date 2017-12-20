@@ -8,10 +8,10 @@ view.include({init:function(parent,dataset,options){
 	
 	
 		// autocompletion de l'adresse
-		this.$('.o_address_street').autocomplete({
+		this.$('.o_address_street :input').autocomplete({
 		source: function (request, response) {
 			$.ajax({
-				url: "https://api-adresse.data.gouv.fr/search/?postcode="+$('.client-address-zip').val(),
+				url: "https://api-adresse.data.gouv.fr/search/?postcode="+$('.client-address-zip :input').val(),
 				data: { q: request.term, limit: 50},
 				dataType: "json",
 				success: function (data) {
@@ -26,16 +26,16 @@ view.include({init:function(parent,dataset,options){
 		},
 		// On remplit aussi la ville et le code postal
 		select: function(event, ui) {
-				$('.o_address_city').val(ui.item.city);
-				$('.o_address_zip').val(ui.item.postcode);
+				$('.o_address_city :input').val(ui.item.city);
+				$('.o_address_zip :input').val(ui.item.postcode);
 			}            
 		});
 
 		// autocompletion du code postal
-		this.$('.o_address_zip').autocomplete({
+		this.$('.o_address_zip  :input').autocomplete({
         source: function (request, response) {
         	$.ajax({
-        		url: "https://api-adresse.data.gouv.fr/search/?postcode="+$('.client-address-zip').val(),
+        		url: "https://api-adresse.data.gouv.fr/search/?postcode="+$('.client-address-zip :input').val(),
         		data: { q: request.term, limit: 50},
         		dataType: "json",
         		success: function (data) {
@@ -55,15 +55,15 @@ view.include({init:function(parent,dataset,options){
 	       },
 	       // On remplit aussi la ville
 	       select: function(event, ui) {
-        		$('.o_address_city').val(ui.item.city);
+        		$('.o_address_city :input').val(ui.item.city);
 	       }            
         });
 
 	// autocompletion de la ville
-        this.$('.o_address_city').autocomplete({
+        this.$('.o_address_city :input').autocomplete({
         	source: function (request, response) {
         		$.ajax({
-        			url: "https://api-adresse.data.gouv.fr/search/?city="+$('.client-address-city').val(),
+        			url: "https://api-adresse.data.gouv.fr/search/?city="+$('.client-address-city :input').val(),
         			data: { q: request.term, limit: 50},
         			dataType: "json",
         			success: function (data) {
@@ -83,7 +83,7 @@ view.include({init:function(parent,dataset,options){
         	},
 	       // On remplit aussi le CP
         	select: function(event, ui) {
-        		$('.o_address_zip').val(ui.item.postcode);
+        		$('.o_address_zip :input').val(ui.item.postcode);
         	}
     });
 });
